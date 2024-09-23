@@ -1,0 +1,144 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f7f8fc, #dfe4ed);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Divider Line */
+.divider {
+    border: none;
+    height: 5px;
+    background: linear-gradient(90deg, #6B73FF, #000DFF);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* Converter Row (Horizontal Layout) */
+.converter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Input, Options, and Output Sections */
+.input-section, .conversion-options, .output-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    background-color: #f9f9f9;
+}
+
+textarea:focus {
+    outline: none;
+    border: 1px solid #6B73FF;
+}
+
+select {
+    background-color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6B73FF;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a61d9;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .converter-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-section, .conversion-options, .output-section {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+footer {
+    text-align: center;
+    padding: 0px; /* Reduce padding for a smaller box */
+    background-color: #f8f9fa;
+        margin-top: 20px;
+    font-size: 12px; /* Adjust font size as needed */
+    width: 100%;
+}
+
+footer p {
+    margin: 2px 0; /* Adjusts spacing between lines */
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

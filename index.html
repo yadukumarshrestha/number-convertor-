@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number & Text Converter</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Number & Text Converter</h1>
+        <p>Convert between Binary, Decimal, Hexadecimal, Octal, and Text formats with ease!</p>
+        
+        <hr class="divider">
+
+        <div class="converter-row">
+            <div class="input-section">
+                <label for="inputValue">Enter Value:</label>
+                <textarea id="inputValue" rows="10" placeholder="Enter a value..."></textarea>
+            </div>
+
+            <div class="conversion-options">
+                <label for="fromBase">From:</label>
+                <select id="fromBase">
+                    <option value="binary">Binary</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="text">Text</option>
+                </select>
+
+                <label for="toBase">To:</label>
+                <select id="toBase">
+                    <option value="binary">Binary</option>
+                    <option value="decimal">Decimal</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                    <option value="octal">Octal</option>
+                    <option value="text">Text</option>
+                </select>
+
+                <button onclick="convert()">Convert</button>
+            </div>
+
+            <div class="output-section">
+                <label for="outputValue">Converted Value:</label>
+                <textarea id="outputValue" rows="10" readonly placeholder="Converted value will appear here"></textarea>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Krishna Shrestha 'Yadu'. All rights reserved.</p>
+            <p>Check out my GitHub: <a href="https://github.com/yadukumarshrestha" target="_blank">yadukumarshrestha</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/convert.js"></script>
+</body>
+</html>
